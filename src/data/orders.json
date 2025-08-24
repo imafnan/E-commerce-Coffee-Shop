@@ -1,0 +1,25 @@
+[
+  {
+    "customerName": "Afnan alam",
+    "phone": "01644612999",
+    "deliveryType": "in-store",
+    "seatNumber": "dhaka bangladesh",
+    "id": "fde919f1-0178-476c-878c-3bf35a31c070",
+    "items": [
+      {
+        "id": "2",
+        "name": "Cappuccino",
+        "description": "An espresso-based coffee drink that originated in Italy, and is traditionally prepared with steamed milk foam.",
+        "price": 3.5,
+        "imageUrl": "https://placehold.co/600x600.png",
+        "stock": 100,
+        "aiHint": "cappuccino cup",
+        "category": "Coffee",
+        "quantity": 1
+      }
+    ],
+    "total": 3.5,
+    "status": "Accepted",
+    "createdAt": "2025-08-24T07:37:53.405Z"
+  }
+]
