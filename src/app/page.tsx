@@ -47,7 +47,7 @@ export default function CoffeeShopLandingPage() {
   }, []);
 
   const popularProducts = allProducts.filter(p => p.isPopular);
-  const specialMenu = allProducts.filter(p => !p.isPopular).slice(0, 6);
+  // const specialMenu = allProducts.filter(p => !p.isPopular).slice(0, 6);
   
   return (
     <div className="bg-background font-sans">
@@ -74,14 +74,14 @@ export default function CoffeeShopLandingPage() {
             <div className="relative flex justify-center">
               <div className="relative">
                 <Image src={heroc} alt="Cappuccino" width={500} height={500} className="rounded-full" data-ai-hint="cappuccino coffee" />
-                <div className="absolute top-8 -left-12 bg-card p-3 rounded-full shadow-lg">
+                <div className="absolute top-8 left-3 bg-card p-3 rounded-full shadow-lg">
                   <p className="font-bold">Cappuccino</p>
                 </div>
-                <div className="absolute top-24 -right-12 bg-card p-3 rounded-full shadow-lg flex items-center gap-2">
+                <div className="absolute top-24 -right-4 bg-card p-3 rounded-full shadow-lg flex items-center gap-2">
                   <p className="font-bold">4.8</p>
                   <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
                 </div>
-                <div className="absolute bottom-8 -left-12 bg-card p-3 rounded-full shadow-lg">
+                <div className="absolute bottom-8 left-10  bg-card p-3 rounded-full shadow-lg">
                   <p className="font-bold">$4.50</p>
                 </div>
               </div>
@@ -177,7 +177,7 @@ export default function CoffeeShopLandingPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">Special menu <span className="text-primary">for you</span></h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
-            {specialMenu.map((item, index) => (
+            {popularProducts.map((item, index) => (
               <Card key={index} className="overflow-hidden shadow-lg rounded-3xl">
                 <CardContent className="p-4">
                   <div className="relative mb-4">
@@ -241,7 +241,7 @@ export default function CoffeeShopLandingPage() {
               <div className="flex justify-center">
                 <div className="flex w-full max-w-md items-center space-x-2">
                   <Input type="email" placeholder="Email address" className="bg-background/80 text-foreground border-none rounded-full" />
-                  <Button type="submit" className="bg-primary text-primary-foreground rounded-full">Order Now</Button>
+                  <Button type="submit" className="bg-primary text-primary-foreground rounded-full">Subscribe </Button>
                 </div>
               </div>
             </div>
