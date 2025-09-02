@@ -38,8 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 ## Demo Video
-
-(https://youtu.be/UDNh5kltV6s)
+[Watch the demo video](https://youtu.be/UDNh5kltV6s)
 
 
 
